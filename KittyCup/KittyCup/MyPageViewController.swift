@@ -11,13 +11,18 @@ import UIKit
 class MyPageViewController: UIPageViewController, UIPageViewControllerDataSource {
     
     var currentHole = 1
+    
+    // Create / Load Model
+    let course = GolfCourse.load("Naperbrook")
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        
         // Do any additional setup after loading the view.
         let initialHoleController = storyboard?.instantiateViewController(withIdentifier: "HoleViewController") as! HoleViewController
         initialHoleController.holeNumber = 1
+        initialHoleController.holePar = course?.holeParValues[0]
         self.setViewControllers([initialHoleController], direction: .forward, animated: true, completion: nil)
         self.dataSource = self
 
@@ -32,6 +37,7 @@ class MyPageViewController: UIPageViewController, UIPageViewControllerDataSource
         print ("GetHoleViewController forHoleNumber: \(hole)")
         let vc = storyboard?.instantiateViewController(withIdentifier: "HoleViewController")as! HoleViewController
         vc.holeNumber = hole
+        vc.holePar = course?.holeParValues[hole-1]
         return vc
     }
     

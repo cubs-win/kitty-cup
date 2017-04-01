@@ -14,6 +14,7 @@ class HoleViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         holeNumberLabel.text = "Hole # \(holeNumber!)"
+        holeParLabel.text = "Par \(holePar!)"
     }
 
     override func didReceiveMemoryWarning() {
@@ -22,7 +23,9 @@ class HoleViewController: UIViewController {
     }
     
     var holeNumber : Int?
+    var holePar : Int?
     
+    @IBOutlet weak var holeParLabel: UILabel!
     @IBOutlet weak var holeNumberLabel: UILabel!
 }
 

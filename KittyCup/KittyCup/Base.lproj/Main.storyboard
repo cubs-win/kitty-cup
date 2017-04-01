@@ -67,7 +67,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Par:  4" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3dA-XD-sy2">
-                                <rect key="frame" x="101" y="62" width="50" height="21"/>
+                                <rect key="frame" x="101" y="62" width="66" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -131,6 +131,7 @@
                     </view>
                     <connections>
                         <outlet property="holeNumberLabel" destination="cgU-yV-gzh" id="dTt-WS-YSX"/>
+                        <outlet property="holeParLabel" destination="3dA-XD-sy2" id="BEF-ZV-SMr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

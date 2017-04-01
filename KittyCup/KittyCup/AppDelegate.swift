@@ -10,12 +10,26 @@ import UIKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
+    
     var window: UIWindow?
-
+    
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        
+        GolfCourse.createCoursesDirectory()
+        let courseName = "Naperbrook"
+        let filename = GolfCourse.coursesDirectory() + courseName + kCourseExtension
+
+        /*
+        let naperbrookHoleParValues = [4, 4, 5, 3, 4, 4, 5, 3, 4, 4, 4, 3, 4, 5, 3, 4, 4, 5]
+        let course = GolfCourse(courseName, naperbrookHoleParValues)
+        
+        print("Persisting course info to file: \(filename)")
+        let succ = NSKeyedArchiver.archiveRootObject(course, toFile: filename)
+        print("Archive status: \(succ)")
+        */
         return true
     }
 
