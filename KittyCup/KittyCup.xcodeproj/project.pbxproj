@@ -1,0 +1,541 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6869CB081E8F0DB600702943 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6869CB071E8F0DB600702943 /* AppDelegate.swift */; };
+		6869CB0A1E8F0DB600702943 /* HoleViewcontroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6869CB091E8F0DB600702943 /* HoleViewcontroller.swift */; };
+		6869CB0D1E8F0DB600702943 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6869CB0B1E8F0DB600702943 /* Main.storyboard */; };
+		6869CB0F1E8F0DB600702943 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6869CB0E1E8F0DB600702943 /* Assets.xcassets */; };
+		6869CB121E8F0DB600702943 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6869CB101E8F0DB600702943 /* LaunchScreen.storyboard */; };
+		6869CB1D1E8F0DB600702943 /* KittyCupTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6869CB1C1E8F0DB600702943 /* KittyCupTests.swift */; };
+		6869CB281E8F0DB600702943 /* KittyCupUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6869CB271E8F0DB600702943 /* KittyCupUITests.swift */; };
+		6869CB361E8F0FB700702943 /* MyPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6869CB351E8F0FB700702943 /* MyPageViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6869CB191E8F0DB600702943 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6869CAFC1E8F0DB600702943 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6869CB031E8F0DB600702943;
+			remoteInfo = KittyCup;
+		};
+		6869CB241E8F0DB600702943 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6869CAFC1E8F0DB600702943 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6869CB031E8F0DB600702943;
+			remoteInfo = KittyCup;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6869CB041E8F0DB600702943 /* KittyCup.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KittyCup.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6869CB071E8F0DB600702943 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6869CB091E8F0DB600702943 /* HoleViewcontroller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoleViewcontroller.swift; sourceTree = "<group>"; };
+		6869CB0C1E8F0DB600702943 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6869CB0E1E8F0DB600702943 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6869CB111E8F0DB600702943 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6869CB131E8F0DB600702943 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6869CB181E8F0DB600702943 /* KittyCupTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KittyCupTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6869CB1C1E8F0DB600702943 /* KittyCupTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KittyCupTests.swift; sourceTree = "<group>"; };
+		6869CB1E1E8F0DB600702943 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6869CB231E8F0DB600702943 /* KittyCupUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KittyCupUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6869CB271E8F0DB600702943 /* KittyCupUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KittyCupUITests.swift; sourceTree = "<group>"; };
+		6869CB291E8F0DB600702943 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6869CB351E8F0FB700702943 /* MyPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyPageViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6869CB011E8F0DB600702943 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6869CB151E8F0DB600702943 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6869CB201E8F0DB600702943 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6869CAFB1E8F0DB600702943 = {
+			isa = PBXGroup;
+			children = (
+				6869CB061E8F0DB600702943 /* KittyCup */,
+				6869CB1B1E8F0DB600702943 /* KittyCupTests */,
+				6869CB261E8F0DB600702943 /* KittyCupUITests */,
+				6869CB051E8F0DB600702943 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6869CB051E8F0DB600702943 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6869CB041E8F0DB600702943 /* KittyCup.app */,
+				6869CB181E8F0DB600702943 /* KittyCupTests.xctest */,
+				6869CB231E8F0DB600702943 /* KittyCupUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6869CB061E8F0DB600702943 /* KittyCup */ = {
+			isa = PBXGroup;
+			children = (
+				6869CB071E8F0DB600702943 /* AppDelegate.swift */,
+				6869CB091E8F0DB600702943 /* HoleViewcontroller.swift */,
+				6869CB0B1E8F0DB600702943 /* Main.storyboard */,
+				6869CB351E8F0FB700702943 /* MyPageViewController.swift */,
+				6869CB0E1E8F0DB600702943 /* Assets.xcassets */,
+				6869CB101E8F0DB600702943 /* LaunchScreen.storyboard */,
+				6869CB131E8F0DB600702943 /* Info.plist */,
+			);
+			path = KittyCup;
+			sourceTree = "<group>";
+		};
+		6869CB1B1E8F0DB600702943 /* KittyCupTests */ = {
+			isa = PBXGroup;
+			children = (
+				6869CB1C1E8F0DB600702943 /* KittyCupTests.swift */,
+				6869CB1E1E8F0DB600702943 /* Info.plist */,
+			);
+			path = KittyCupTests;
+			sourceTree = "<group>";
+		};
+		6869CB261E8F0DB600702943 /* KittyCupUITests */ = {
+			isa = PBXGroup;
+			children = (
+				6869CB271E8F0DB600702943 /* KittyCupUITests.swift */,
+				6869CB291E8F0DB600702943 /* Info.plist */,
+			);
+			path = KittyCupUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6869CB031E8F0DB600702943 /* KittyCup */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6869CB2C1E8F0DB600702943 /* Build configuration list for PBXNativeTarget "KittyCup" */;
+			buildPhases = (
+				6869CB001E8F0DB600702943 /* Sources */,
+				6869CB011E8F0DB600702943 /* Frameworks */,
+				6869CB021E8F0DB600702943 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KittyCup;
+			productName = KittyCup;
+			productReference = 6869CB041E8F0DB600702943 /* KittyCup.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6869CB171E8F0DB600702943 /* KittyCupTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6869CB2F1E8F0DB600702943 /* Build configuration list for PBXNativeTarget "KittyCupTests" */;
+			buildPhases = (
+				6869CB141E8F0DB600702943 /* Sources */,
+				6869CB151E8F0DB600702943 /* Frameworks */,
+				6869CB161E8F0DB600702943 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6869CB1A1E8F0DB600702943 /* PBXTargetDependency */,
+			);
+			name = KittyCupTests;
+			productName = KittyCupTests;
+			productReference = 6869CB181E8F0DB600702943 /* KittyCupTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		6869CB221E8F0DB600702943 /* KittyCupUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6869CB321E8F0DB600702943 /* Build configuration list for PBXNativeTarget "KittyCupUITests" */;
+			buildPhases = (
+				6869CB1F1E8F0DB600702943 /* Sources */,
+				6869CB201E8F0DB600702943 /* Frameworks */,
+				6869CB211E8F0DB600702943 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6869CB251E8F0DB600702943 /* PBXTargetDependency */,
+			);
+			name = KittyCupUITests;
+			productName = KittyCupUITests;
+			productReference = 6869CB231E8F0DB600702943 /* KittyCupUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6869CAFC1E8F0DB600702943 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = kuhn;
+				TargetAttributes = {
+					6869CB031E8F0DB600702943 = {
+						CreatedOnToolsVersion = 8.3;
+						DevelopmentTeam = 25P962M3YY;
+						ProvisioningStyle = Automatic;
+					};
+					6869CB171E8F0DB600702943 = {
+						CreatedOnToolsVersion = 8.3;
+						DevelopmentTeam = 25P962M3YY;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 6869CB031E8F0DB600702943;
+					};
+					6869CB221E8F0DB600702943 = {
+						CreatedOnToolsVersion = 8.3;
+						DevelopmentTeam = 25P962M3YY;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 6869CB031E8F0DB600702943;
+					};
+				};
+			};
+			buildConfigurationList = 6869CAFF1E8F0DB600702943 /* Build configuration list for PBXProject "KittyCup" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6869CAFB1E8F0DB600702943;
+			productRefGroup = 6869CB051E8F0DB600702943 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6869CB031E8F0DB600702943 /* KittyCup */,
+				6869CB171E8F0DB600702943 /* KittyCupTests */,
+				6869CB221E8F0DB600702943 /* KittyCupUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6869CB021E8F0DB600702943 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6869CB121E8F0DB600702943 /* LaunchScreen.storyboard in Resources */,
+				6869CB0F1E8F0DB600702943 /* Assets.xcassets in Resources */,
+				6869CB0D1E8F0DB600702943 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6869CB161E8F0DB600702943 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6869CB211E8F0DB600702943 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6869CB001E8F0DB600702943 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6869CB0A1E8F0DB600702943 /* HoleViewcontroller.swift in Sources */,
+				6869CB361E8F0FB700702943 /* MyPageViewController.swift in Sources */,
+				6869CB081E8F0DB600702943 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6869CB141E8F0DB600702943 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6869CB1D1E8F0DB600702943 /* KittyCupTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6869CB1F1E8F0DB600702943 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6869CB281E8F0DB600702943 /* KittyCupUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6869CB1A1E8F0DB600702943 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6869CB031E8F0DB600702943 /* KittyCup */;
+			targetProxy = 6869CB191E8F0DB600702943 /* PBXContainerItemProxy */;
+		};
+		6869CB251E8F0DB600702943 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6869CB031E8F0DB600702943 /* KittyCup */;
+			targetProxy = 6869CB241E8F0DB600702943 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6869CB0B1E8F0DB600702943 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6869CB0C1E8F0DB600702943 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6869CB101E8F0DB600702943 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6869CB111E8F0DB600702943 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6869CB2A1E8F0DB600702943 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6869CB2B1E8F0DB600702943 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6869CB2D1E8F0DB600702943 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 25P962M3YY;
+				INFOPLIST_FILE = KittyCup/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kuhn.KittyCup;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		6869CB2E1E8F0DB600702943 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 25P962M3YY;
+				INFOPLIST_FILE = KittyCup/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kuhn.KittyCup;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		6869CB301E8F0DB600702943 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 25P962M3YY;
+				INFOPLIST_FILE = KittyCupTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kuhn.KittyCupTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KittyCup.app/KittyCup";
+			};
+			name = Debug;
+		};
+		6869CB311E8F0DB600702943 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 25P962M3YY;
+				INFOPLIST_FILE = KittyCupTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kuhn.KittyCupTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KittyCup.app/KittyCup";
+			};
+			name = Release;
+		};
+		6869CB331E8F0DB600702943 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 25P962M3YY;
+				INFOPLIST_FILE = KittyCupUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kuhn.KittyCupUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = KittyCup;
+			};
+			name = Debug;
+		};
+		6869CB341E8F0DB600702943 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 25P962M3YY;
+				INFOPLIST_FILE = KittyCupUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kuhn.KittyCupUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = KittyCup;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6869CAFF1E8F0DB600702943 /* Build configuration list for PBXProject "KittyCup" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6869CB2A1E8F0DB600702943 /* Debug */,
+				6869CB2B1E8F0DB600702943 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6869CB2C1E8F0DB600702943 /* Build configuration list for PBXNativeTarget "KittyCup" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6869CB2D1E8F0DB600702943 /* Debug */,
+				6869CB2E1E8F0DB600702943 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		6869CB2F1E8F0DB600702943 /* Build configuration list for PBXNativeTarget "KittyCupTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6869CB301E8F0DB600702943 /* Debug */,
+				6869CB311E8F0DB600702943 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		6869CB321E8F0DB600702943 /* Build configuration list for PBXNativeTarget "KittyCupUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6869CB331E8F0DB600702943 /* Debug */,
+				6869CB341E8F0DB600702943 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6869CAFC1E8F0DB600702943 /* Project object */;
+}

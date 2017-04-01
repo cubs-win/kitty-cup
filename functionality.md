@@ -24,7 +24,8 @@ Functionality:
     * Notes "you" only
     * App will keep track of kitty cup points for each player automatically. Will display running kitty cup points totals for the round.
     * App will keep track of season long kitty cup points (save this data to iCloud?)
-    * Settings screen will allow entry of kitty cup point awards. Defaults are 1 for bogey, 2 for par, 4 for birdie, 8 for eagle. Extra point for up & down. Extra 2 points for sand up & down. Minus one point for a 3 putt.
+    * Settings screen will allow entry of kitty cup point awards. Defaults are 1 for bogey, 2 for par, 4 for birdie, 8 for eagle.
+        * Extra point for up & down. Extra 2 points for sand up & down. Minus one point for a 3 putt.
     * Note: User need not enter GIR, it can be deduced from par value of hole, score, and number of putts. Namely if score - num_putts <= par - 2
 
 Modes:
@@ -34,10 +35,17 @@ Modes:
      * One button to see stats screen (for season long stats)
      * A button to enter round review mode for any previous round
  * When round is active there are 2 views:
-     * Data entry view allows you to enter data or edit data for any hole (swipe right/left to switch holes; swipe up down to change players). On the data entry view there will be a row for each player showing scoring summary for each player including number of kitty points for that hole. Tap on a row to edit or enter data for that hole for that player.
-     * Round stats view. Row for each player summarizing whole round stats. Shows Kitty points, birdie count, par count, bogey count, other count. Putt count & avg. Fairways hit x/y. GIR x/y. 3-putts x/y. Total score; projected score.
-    * If you swipe up or down  past all the players, you come back to the Round Stats View. From the Round Stats View, swipe up or down again to go back to the players.
+     * Data entry view
+         * allows you to enter data or edit data for any hole
+         * swipe right/left to switch holes; swipe up down to change players
+         * On the data entry view there will be a row for each player showing scoring summary for each player including number of kitty points for that hole.
+         * Tap on a row to edit or enter data for that hole for that player.
+     * Round Summary view.
+         * Row for each player summarizing whole round stats. Shows Kitty points, birdie count, par count, bogey count, other count.
+         * Shows Putt count & avg. Fairways hit x/y. GIR x/y. 3-putts x/y. Total score; projected score.
+    * If you swipe up or down  past all the players, you come back to the Round Summary View. From the Round Summary View, swipe up or down again to go back to the players.
     * Double-tap any view while a round is active brings up "end round" dialog w/ choices to Save, Delete, or Cancel
+ * Extra Feature: While round is active, change to landscape for a traditional scorecard view. Shows holes, scores, & kitty points
  * Round review mode:
      * Summary screen shows players, scores, course, date, & kitty points
      * Tap a player to view hole by hole details
@@ -57,7 +65,6 @@ First version to have very limited functionality as follows:
  * Placeholder for round review mode.
  * Home Screen View (Shows 3 buttons: Start new round, load round, and (greyed out) season stats view.
  * Start Round View. App won't remember history yet. Will assume "you" are  playing.
- * Data entry overview view (shows all players)
+ * Round Summary view (shows all players)
  * Data entry detail view (shows one player for specific hole)
- * Current round stats view 
 
