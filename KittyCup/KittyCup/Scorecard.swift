@@ -53,7 +53,6 @@ class GolfCourse : NSObject, NSCoding {
     }
     
     public func encode(with aCoder: NSCoder) {
-        print("GolfCourse Encode IN for \(self.name)")
         aCoder.encode(self.name, forKey:"name")
         aCoder.encode(self.holeParValues, forKey:"holeParValues")
     }
@@ -75,23 +74,106 @@ class GolfCourse : NSObject, NSCoding {
     }
 }
 
-/*
+enum Club {
+    case driver
+    case threewood
+    case fivewood
+    case hybrid
+    case fiveiron
+    case sixiron
+    case seveniron
+    case eightiron
+    case nineiron
+    case pitchingwedge
+    case gapwedge
+    case sandwedge
+    case lobwedge
+    case putter
+}
+
+// BasicPlayerHoleData is collected for all players, whereas more
+// detailed data is collected only for "you" (the user)
+// The fields in BasicPlayerHoleData are just what's needed to
+// calculate kitty points
+class BasicPlayerHoleData : NSObject, NSCoding {
+    var score : Int
+    var puttCount : Int
+    var sandShotCount : Int    // For greenside bunkers only.
+    var upAndDown: Bool?       // Set to nil for n/a, meaning no up&down opportunity for this hole
+    public func encode(with aCoder: NSCoder) {
+        aCoder.encode(self.score, forKey:"score")
+    }
+    
+    public required init?(coder aDecoder: NSCoder) {
+        return nil
+    }
+
+}
+
+class DetailedPlayerHoleData: NSObject, NSCoding {
+    var fairwayHit : Bool?     // Optional because only applies to par 4 and par 5 holes
+    var penatltyStrokeCount : Int
+    var teeShotClubUsed : Club
+    var teeShotPushFlag : Bool
+    var teeShotPullFlag : Bool
+    var teeShotHookFlag : Bool
+    var teeShotFatFlag : Bool
+    var teeShotThinFlag : Bool
+    var notes : String?
+    
+    
+    public func encode(with aCoder: NSCoder) {
+        aCoder.encode(self.penatltyStrokeCount, forKey:"penaltyStrokeCount")
+    }
+    
+    public required init?(coder aDecoder: NSCoder) {
+        return nil
+    }
+
+}
+
+class PlayerHoleData : NSObject, NSCoding {
+    var basicData : BasicPlayerHoleData
+    var detailedData : DetailedPlayerHoleData?
+    
+    public func encode(with aCoder: NSCoder) {
+        aCoder.encode(self.basicData, forKey:"basicData")
+    }
+    
+    public required init?(coder aDecoder: NSCoder) {
+        return nil
+    }
+
+}
+
+class ScoreCardRow : NSObject, NSCoding {
+    var playerName: String
+    var playerHoleData : [PlayerHoleData]
+    
+    public func encode(with aCoder: NSCoder) {
+        aCoder.encode(self.playerName, forKey:"playerName")
+    }
+    
+    public required init?(coder aDecoder: NSCoder) {
+        return nil
+    }
+
+}
+
 class Scorecard : NSObject, NSCoding {
     
     
     var date : Date
     var course : GolfCourse
-    
-    
-    
-    
+    var rows : [ScoreCardRow]
     
     public func encode(with aCoder: NSCoder) {
-        
+        aCoder.encode(self.date, forKey:"date")
+        aCoder.encode(self.course, forKey: "course")
     }
     
     public required init?(coder aDecoder: NSCoder) {
-
+        return nil
     }
 } 
- */
+ 
