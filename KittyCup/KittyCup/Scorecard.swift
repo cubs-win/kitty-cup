@@ -10,6 +10,15 @@ import Foundation
 
 let kCoursesDirectory = "Courses"
 let kCourseExtension = ".kittycupcourse"
+let kAlbatrossPoints = 16
+let kEaglePoints = 8
+let kBirdiePoints = 4
+let kParPoints = 2
+let kBogeyPoints = 1
+let kUpAndDownPoints = 1
+let kSandyPoints = 2
+let kThreePuttPoints = -1
+
 
 class GolfCourse : NSObject, NSCoding {
     
@@ -126,6 +135,7 @@ class BasicPlayerHoleData : NSObject, NSCoding {
     var puttCount : Int
     var sandShotCount : Int    // For greenside bunkers only.
     var upAndDown: Bool?       // Set to nil for n/a, meaning no up&down opportunity for this hole
+    var kittyPoints : Int
     
     public func encode(with aCoder: NSCoder) {
         aCoder.encode(self.score, forKey:"score")
@@ -136,12 +146,44 @@ class BasicPlayerHoleData : NSObject, NSCoding {
     }
     
     public init(holePar par : Int) {
+        kittyPoints = 0
         holePar = par
         score =  par
         puttCount = 2
         sandShotCount = 0
         upAndDown=nil
         super.init()
+    }
+    
+    public func calculateKittyPoints() {
+        var points = 0
+        if (self.score == self.holePar - 3) {
+            points += kAlbatrossPoints
+        } else if (self.score == self.holePar - 2) {
+            points += kEaglePoints
+        } else if (self.score == self.holePar - 1) {
+            points += kBirdiePoints
+        } else if (self.score == self.holePar) {
+            points += kParPoints
+        } else if (self.score == self.holePar + 1) {
+            points += kBogeyPoints
+        }
+        
+        if let upAndDown = self.upAndDown {
+            if (true == upAndDown) {
+                if (0 == self.sandShotCount) {
+                    points += kUpAndDownPoints
+                } else {
+                    points += kSandyPoints
+                }
+            }
+        }
+        
+        if (self.puttCount > 2) {
+            points += kThreePuttPoints
+        }
+        
+        self.kittyPoints = points;
     }
 
 }
@@ -304,6 +346,8 @@ public class Scorecard : NSObject, NSCoding {
     public func setScore(forHole holeNumber: Int, forPlayer playerIndex : Int, toValue value : Int) {
         if (isValidHoleNumber(holeNumber) && isValidPlayerIndex(playerIndex)) {
             self.rows[playerIndex].playerHoleData[holeNumber-1].basicData.score = value
+            self.setBlankFlag(forHole: holeNumber, forPlayer: playerIndex, toValue: false);
+            self.calculateKittyPoints(forHole: holeNumber, forPlayer: playerIndex)
         }
     }
     
@@ -366,6 +410,12 @@ public class Scorecard : NSObject, NSCoding {
             return self.rows[playerIndex].playerHoleData[holeNumber-1].basicData.upAndDown;
         }
         return nil;
+    }
+    
+    public func calculateKittyPoints(forHole holeNumber: Int, forPlayer playerIndex: Int) {
+        if (isValidHoleNumber(holeNumber) && isValidPlayerIndex(playerIndex)) {
+            rows[playerIndex].playerHoleData[holeNumber-1].basicData.calculateKittyPoints();
+        }
     }
 
 
