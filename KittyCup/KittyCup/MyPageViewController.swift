@@ -13,18 +13,23 @@ class MyPageViewController: UIPageViewController, UIPageViewControllerDataSource
     var currentHole = 1
     
     // Create / Load Model
-    let course = GolfCourse.load("Naperbrook")
-
+    var courseName : String = "Naperbrook"
+    var course : GolfCourse?
+    var scoreCard : Scorecard?
+    var playerNames : [String] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
         
-        // Do any additional setup after loading the view.
+        course = GolfCourse.load(courseName)
+        scoreCard = Scorecard(courseName:courseName, playerNames:playerNames)
         let initialHoleController = storyboard?.instantiateViewController(withIdentifier: "HoleViewController") as! HoleViewController
         initialHoleController.holeNumber = 1
         initialHoleController.holePar = course?.holeParValues[0]
+        initialHoleController.scoreCard = scoreCard
         self.setViewControllers([initialHoleController], direction: .forward, animated: true, completion: nil)
         self.dataSource = self
+        
 
     }
     
@@ -38,6 +43,7 @@ class MyPageViewController: UIPageViewController, UIPageViewControllerDataSource
         let vc = storyboard?.instantiateViewController(withIdentifier: "HoleViewController")as! HoleViewController
         vc.holeNumber = hole
         vc.holePar = course?.holeParValues[hole-1]
+        vc.scoreCard = scoreCard
         return vc
     }
     

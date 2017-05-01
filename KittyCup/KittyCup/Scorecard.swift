@@ -78,8 +78,14 @@ class GolfCourse : NSObject, NSCoding {
     }
     
     class func load(_ name : String) -> GolfCourse? {
+        print("Attemping to load course: \(name)")
         let filename = GolfCourse.coursesDirectory() + name + kCourseExtension
         let course = NSKeyedUnarchiver.unarchiveObject(withFile: filename) as? GolfCourse
+        if (nil != course) {
+            print("Successfully loaded course \(name)")
+        } else {
+            print("Could not load course \(name)")
+        }
         return course
 
     }
@@ -287,7 +293,7 @@ public class Scorecard : NSObject, NSCoding {
         
     // Memberwise initializer
     public init?(courseName : String, playerNames : [String]) {
-        GolfCourse.createHardCodedCourses()
+        
         if let aCourse = GolfCourse.load(courseName) {
             course = aCourse
             date = Date()

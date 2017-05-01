@@ -16,6 +16,7 @@ class HoleViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
         // Do any additional setup after loading the view, typically from a nib.
         holeNumberLabel.text = "Hole # \(holeNumber!)"
         holeParLabel.text = "Par \(holePar!)"
+        courseNameLabel.text = scoreCard!.course.name
         clubData = ["Driver", "3W", "5W", "Hybrid", "5i", "6i", "7i", "8i", "9i", "PW", "GW", "SW", "LW"]
         print("viewDidLoad and puttCountStepper value is \(puttCountStepper.value)")
         print("viewDidLoad and club count is \(clubData.count)")
@@ -44,9 +45,14 @@ class HoleViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
         return clubData[row]
 
     }
+    
+    public func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        print("Picker View Action: \(clubData[row]) selected!")
+    }
 
     var holeNumber : Int?
     var holePar : Int?
+    var scoreCard : Scorecard?
     
     @IBOutlet weak var teeShotClubPicker: UIPickerView!
     @IBOutlet weak var upAndDownYesButton: UIButton!
@@ -56,6 +62,7 @@ class HoleViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
     @IBOutlet weak var holeNumberLabel: UILabel!
     @IBOutlet weak var puttCountLabel: UILabel!
     @IBOutlet weak var puttCountStepper: UIStepper!
+    @IBOutlet weak var courseNameLabel: UILabel!
     
     
     var clubData: [String] = [String]()
@@ -89,5 +96,9 @@ class HoleViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
         
     }
     
+    @IBAction func saveButtonPressed(_ sender: UIButton) {
+        let row = teeShotClubPicker.selectedRow(inComponent:0)
+        print("Save button pressed w/ Club selected: \(clubData[row])")
+    }
 }
 
